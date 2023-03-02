@@ -1,0 +1,151 @@
+
+.time {
+    text-align: center;
+    background-color: rgb(5, 20, 90);
+  }
+  
+  #game{
+  
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(97, 204, 190, 0.534);
+    height: auto;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 5%;
+   
+  }
+  
+  .clock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10vh;
+    align-content: center;
+    font-size: 80px;
+  }
+  
+  .row{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(13, 13, 14);
+    margin: 5px;
+   
+    
+  }
+  
+  @media screen and (max-width: 700px){
+    #game{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: royalblue;
+      height: auto;
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 5%;
+    }
+  
+    .clock {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10vh;
+      align-content: center;
+      font-size: 30px;
+    }
+  
+    .row{
+      width: 0px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: aliceblue;
+      margin: 5px;
+      
+    }
+  
+  }
+  
+  
+  
+  .red{
+    background-color: rgb(187, 5, 5);
+  }
+  
+  .yellow{
+    background-color: yellow;
+  }
+  
+  .row.hoverRed{
+  
+    background-color: darkred;
+  }
+  
+  .row.hoverYellow{
+  
+    background-color: darkgoldenrod;
+  }
+  
+  body {
+  
+    background-color: #16bfee;
+    font-family: roboto;
+    font-weight: 100;
+  }
+
+  
+  .box1 {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(1, 7, 7);
+    box-shadow: 10px 10px 50px 10px rgb(49, 216, 91);
+    display: inline-block;
+  }
+  .box2 {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(14, 1, 1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px rgb(236, 3, 3);
+    display: inline-block;
+  }
+  .box3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(2, 17, 17);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px rgb(245, 242, 247);
+    display: inline-block;
+  }
+  
+  .box3-alt {
+    animation: bounce 1s infinite;
+  }
+  .bounce {
+      height: 105px;
+      width: 90px;
+  
+    display: inline-block;
+      
+      -webkit-animation-name: bounce;
+      -webkit-animation-duration: .2s;
+      animation-name: bounce;
+      animation-duration: .2s ;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
